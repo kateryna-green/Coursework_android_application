@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/picture_backgroud"
+    android:padding="16dp"
+    tools:context=".StartingScreenActivity">
+
+    <TextView
+        android:id="@+id/main_text_SS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/speedspeak"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/text_view_highscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/highscore_0"
+        android:textColor="@color/white"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_above="@id/button_start_quiz"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginBottom="32dp"
+        />
+
+    <Button
+        android:id="@+id/button_start_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_test"
+        android:fontFamily="@font/nunito_bold"
+        android:background="@drawable/button_next"
+        android:layout_centerInParent="true"/>
+
+
+<LinearLayout
+    android:id="@+id/liner_layout_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/main_text_SS"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/text_view_language_titel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/language"
+        android:textColor="@color/white"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/liner_layout_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/liner_layout_1"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/text_view_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/level"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/nunito_bold"
+        android:textSize="20sp"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/nunito_bold"
+        />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_start_cards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/start_cards"
+        android:layout_below="@id/button_start_quiz"
+        android:background="@drawable/button_next"
+        android:layout_marginTop="17dp"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

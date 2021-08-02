@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SpeedSpeak</string>
+    <string name="front">Front</string>
+    <string name="back">Back</string>
+    <string name="speedspeak">SpeedSpeak</string>
+    <string name="highscore_0">Highscore: 0</string>
+    <string name="start_test">Test</string>
+    <string name="start_cards">Cards</string>
+    <string name="score_0">Score: 0</string>
+    <string name="question_1_x">Question: 1/x</string>
+    <string name="difficulty">Difficulty:</string>
+    <string name="language">Language:</string>
+    <string name="_00_30">00:30</string>
+    <string name="some_text_what_should_you_know_but_i_did_not_create_it_i_m_so_sorry">Some text what should you know, but i did not create it, i`m so sorry</string>
+    <string name="option_1">Option 1</string>
+    <string name="option_2">Option 2</string>
+    <string name="option_3">Option 3</string>
+    <string name="confirm">Confirm</string>
+    <string name="next">Next</string>
+    <string name="level">Level:</string>
+</resources>

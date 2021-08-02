@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".CardsActivity"
+android:onClick="flipCard"
+android:background="@drawable/picture_backgroud">
+
+    <TextView
+        android:id="@+id/text_view_language_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/language"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/nunito_bold"
+        android:freezesText="true"
+        />
+
+    <FrameLayout
+        android:id="@+id/card_back"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="160dp">
+        <include layout="@layout/card_back" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/card_front"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="160dp">
+        <include layout="@layout/card_front" />
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@drawable/rectangle"
+        android:fontFamily="@font/nunito_bold"
+        android:backgroundTint="@color/color_button"
+        android:text="@string/next"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        android:layout_marginBottom="130dp"/>
+
+
+</FrameLayout>

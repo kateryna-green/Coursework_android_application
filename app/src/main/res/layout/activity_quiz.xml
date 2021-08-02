@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/picture_backgroud"
+    android:padding="16dp"
+    tools:context=".QuizActivity">
+
+  <TextView
+      android:id="@+id/text_view_score"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/score_0"
+      android:fontFamily="@font/nunito_bold"
+      android:textColor="@color/white"
+      android:freezesText="true"
+    />
+
+  <TextView
+      android:id="@+id/text_view_question_count"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/question_1_x"
+      android:textColor="@color/white"
+      android:fontFamily="@font/nunito_bold"
+      android:layout_below="@id/text_view_score"
+      android:freezesText="true"
+      />
+
+
+  <TextView
+      android:id="@+id/text_view_difficulty"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/white"
+      android:text="@string/difficulty"
+      android:fontFamily="@font/nunito_bold"
+      android:freezesText="true"
+      android:layout_below="@id/text_view_question_count"
+    />
+
+    <TextView
+        android:id="@+id/text_view_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/language"
+        android:fontFamily="@font/nunito_bold"
+        android:freezesText="true"
+        android:layout_below="@id/text_view_difficulty"
+        />
+
+  <TextView
+      android:id="@+id/text_view_countdown"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:textColor="@color/white"
+      android:freezesText="true"
+      android:fontFamily="@font/nunito_bold"
+      android:text="@string/_00_30"
+      android:textSize="40sp"
+   />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image"
+        android:layout_marginTop="150dp"
+        >
+
+        <TextView
+            android:id="@+id/text_view_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/radio_group"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:freezesText="true"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/some_text_what_should_you_know_but_i_did_not_create_it_i_m_so_sorry"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true">
+
+            <RadioButton
+                android:id="@+id/radio_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:freezesText="true"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/option_1" />
+
+            <RadioButton
+                android:id="@+id/radio_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:freezesText="true"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/option_2" />
+
+            <RadioButton
+                android:id="@+id/radio_button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:freezesText="true"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/option_3" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button_confirm_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_group"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:freezesText="true"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/confirm" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+</RelativeLayout>
